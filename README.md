@@ -1,9 +1,9 @@
 <div align="center">
-  <img alt="Roshan Kr Soni Portfolio" src="assets/portfolio.png" width="800" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0,0,0,0.15);" />
+  <img alt="Benjamin Portfolio" src="assets/portfolio.png" width="800" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0,0,0,0.15);" />
   
   <br /><br />
 
-  <h1 align="center"><a href="https://roshankrsoni.github.io" target="_blank" style="text-decoration:none; color:inherit;">Roshan Kr Soni - Personal Portfolio</a></h1>
+  <h1 align="center"><a href="https://benbuilds.vercel.app" target="_blank" style="text-decoration:none; color:inherit;">Benjamin Liu - Personal Portfolio</a></h1>
   
   <p align="center">
     <strong>Senior Software Engineer | React & React Native | AI Integration</strong><br>
@@ -11,16 +11,9 @@
   </p>
 
   <p align="center">
-    <a href="https://roshankrsoni.github.io" target="_blank">
+    <a href="https://benbuilds.vercel.app" target="_blank">
       <img src="https://img.shields.io/badge/View_Live_Site-0A66C2?style=for-the-badge&logoColor=white" alt="Live Preview" />
     </a>
-  </p>
-
-  <p align="center">
-    <img src="https://img.shields.io/github/stars/Roshankrsoni/Roshankrsoni.github.io?style=flat-square" alt="Stars" /> 
-    <img src="https://img.shields.io/github/forks/Roshankrsoni/Roshankrsoni.github.io?style=flat-square" alt="Forks" /> 
-    <img src="https://img.shields.io/github/issues/Roshankrsoni/Roshankrsoni.github.io?style=flat-square" alt="Issues" /> 
-    <img src="https://img.shields.io/github/issues-pr/Roshankrsoni/Roshankrsoni.github.io?style=flat-square" alt="Issues PR" /> 
   </p>
 </div>
 
@@ -62,8 +55,8 @@ If you want to spin this up on your own machine to poke around the code:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Roshankrsoni/Roshankrsoni.github.io.git
-cd Roshankrsoni.github.io
+git clone https://github.com/benbuilds2124/personal-portfolio.git
+cd personal-portfolio
 
 # Install deps
 npm install
@@ -87,5 +80,5 @@ All I ask is that you swap out my personal details and give me a quick credit so
 
 <br />
 <div align="center">
-  <i>Built with ❤️ by Roshan Kr Soni.</i>
+  <i>Built with ❤️ by Benjamin Liu.</i>
 </div>

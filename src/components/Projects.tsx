@@ -33,8 +33,8 @@ const projects = [
     title: "Personal Portfolio",
     description: "A modern, performance‑focused portfolio built with React 19, Tailwind CSS v4, and the Motion API. Designed with accessibility, smooth scroll‑based animations, and subtle micro‑interactions to feel fast and polished on every device.",
     image: portfolioImg,
-    link: "https://roshankrsoni.github.io",
-    githubLink: "https://github.com/Roshankrsoni/Roshankrsoni.github.io",
+    link: "https://benbuilds.vercel.app",
+    githubLink: "https://github.com/benbuilds2124/personal-portfolio",
     tags: ["React.js", "TailwindCSS", "Motion", "Vercel"] // Vercel icon works as a general hosting icon
   }
 ];

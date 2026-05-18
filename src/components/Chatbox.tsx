@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { MessageCircle, X, CheckCircle2, ChevronDown } from 'lucide-react';
+import { MessageCircle, X, CheckCircle2 } from 'lucide-react';
 
 export default function Chatbox() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,6 @@ export default function Chatbox() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     query: ''
   });
 
@@ -37,7 +36,7 @@ export default function Chatbox() {
           service: 37291,
           email: formData.email,
           name: formData.name,
-          phone: `+91${formData.phone}`,
+          phone: `+9112345678`,
           answers_json: [],
           subscribe_to_whatsapp: true,
           price: 0,
@@ -128,26 +127,6 @@ export default function Chatbox() {
                     />
                   </div>
                   
-                  <div className="space-y-1.5 flex flex-col items-start text-left">
-                    <label className="text-[13px] font-medium text-slate-700 dark:text-slate-300">Phone number</label>
-                    <div className="flex w-full rounded-lg border border-slate-300 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-950 focus-within:ring-2 focus-within:ring-blue-500/50">
-                      <div className="flex items-center gap-1 px-2.5 bg-slate-200/50 dark:bg-slate-800/50 border-r border-slate-300 dark:border-slate-700 text-sm cursor-pointer select-none">
-                        <span className="text-base leading-none">🇮🇳</span>
-                        <ChevronDown className="w-3 h-3 text-slate-500" />
-                      </div>
-                      <div className="flex items-center flex-1 px-3 bg-transparent">
-                        <span className="text-sm text-slate-600 dark:text-slate-400 mr-1">+91</span>
-                        <input 
-                          required 
-                          type="tel"
-                          value={formData.phone}
-                          onChange={e => setFormData({...formData, phone: e.target.value.replace(/[^0-9]/g, '')})}
-                          className="w-full text-sm py-2.5 focus:outline-none dark:text-slate-200 bg-transparent placeholder:text-slate-400"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
                   {status === 'error' && (
                     <p className="text-xs text-red-500 font-medium text-left">Failed to send. Please try again.</p>
                   )}

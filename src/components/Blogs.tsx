@@ -4,14 +4,6 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 
 const blogs = [
   {
-    id: 0,
-    title: "Understanding Big O Notation for Frontend Developers",
-    excerpt: "Learn Big O notation essentials with simple explanations and real JavaScript examples. Understand constant, linear, and quadratic time complexities to write more efficient frontend code and ace technical interviews.",
-    date: "Jan 23, 2025",
-    readTime: "4 min read",
-    link: "https://dev.to/roshankrsoni/understanding-big-o-notation-for-frontend-developers-2pdc"
-  },
-  {
     id: 1,
     title: "A Quick way to open anything on the Web",
     excerpt: "A quick way to open common web tools is to type special .new URLs directly in your browser, such as repo.new for a new GitHub repository, docs.new for a new Google Doc, or react.new for a new...",

@@ -1,92 +1,243 @@
-import { motion } from 'motion/react';
-import { Briefcase, Code, Coffee, ArrowRight } from 'lucide-react';
+import { motion } from "motion/react";
+import {
+  Calendar,
+  Folder,
+  Briefcase,
+  Brain,
+  Zap,
+  Layers,
+  ArrowRight,
+  Calendar1Icon,
+  ChartBar,
+} from "lucide-react";
 
-const contactCards = [
+import {
+  TbBrandReact,
+  TbBrandNextjs,
+  TbBrandTypescript,
+} from "react-icons/tb";
+
+import { SiOpenai } from "react-icons/si";
+import CalendlyButton from "./CalendlyButton";
+import Chatbox from "./Chatbox";
+import { BsChat, BsChatHeart, BsChatLeft } from "react-icons/bs";
+
+const stackItems = [
   {
-    title: "Hire Full-time",
-    description: "Looking for a dedicated developer to join your engineering team?",
+    name: "React",
+    icon: TbBrandReact,
+    color: "text-cyan-500",
+  },
+  {
+    name: "Next.js",
+    icon: TbBrandNextjs,
+    color: "text-slate-900 dark:text-slate-200",
+  },
+  {
+    name: "OpenAI",
+    icon: SiOpenai,
+    color: "text-slate-900 dark:text-slate-200",
+  },
+  {
+    name: "TypeScript",
+    icon: TbBrandTypescript,
+    color: "text-blue-500",
+  },
+];
+
+const cards = [
+  {
+    title: "8+",
+    subtitle: "Years Experience",
+    description: "Building robust and scalable web applications.",
     icon: Briefcase,
-    color: "text-blue-500"
+    color: "text-violet-500 dark:text-violet-400",
   },
   {
-    title: "Freelance Project",
-    description: "Need a high-impact landing page or web app built from scratch?",
-    icon: Code,
-    color: "text-emerald-500"
+    title: "AI-Powered",
+    subtitle: "Applications",
+    description: "Integrating AI into products that solve real problems.",
+    icon: Brain,
+    color: "text-blue-500 dark:text-blue-400",
   },
   {
-    title: "Collaboration",
-    description: "Have a startup idea or open source project you want to discuss?",
-    icon: Coffee,
-    color: "text-amber-500"
-  }
+    title: "Real-Time",
+    subtitle: "Systems",
+    description: "High-performance apps with live data and interactions.",
+    icon: Zap,
+    color: "text-emerald-500 dark:text-emerald-400",
+  },
+  {
+    title: "Full Stack",
+    subtitle: "Architecture",
+    description: "End-to-end solutions with modern architecture.",
+    icon: Layers,
+    color: "text-amber-500 dark:text-amber-400",
+  },
 ];
 
 export default function Contact() {
   return (
-    <section id="contact" className="w-full pt-8 pb-12 mt-4 border-t border-slate-200 dark:border-slate-800/50">
-      <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-8 space-y-2">
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-2xl sm:text-3xl font-medium tracking-tight text-slate-900 dark:text-slate-50"
-        >
-          Wanna <span className="font-dancing-script font-bold text-rose-500">Chat</span>?
-        </motion.h2>
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-xs sm:text-sm max-w-lg text-slate-500 dark:text-slate-400 font-inter leading-relaxed"
-        >
-          Whether you need a full-time engineer, a freelance expert, or just want to talk tech—I'm just a message away.
-        </motion.p>
-      </div>
+    <section
+      id="contact"
+      className="relative w-full overflow-hidden bg-white px-4 py-20 transition-colors duration-300 dark:bg-slate-950"
+    >
+      {/* Background Effect */}
+      <img
+        src="/assets/ai_cta_background_effect.png"
+        alt=""
+        className="pointer-events-none absolute inset-0 h-auto w-full object-contain opacity-[0.18] transition-opacity duration-300 dark:opacity-80"
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
-        {contactCards.map((card, index) => (
-          <motion.div 
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
+      <div className="relative z-10 mx-auto max-w-7xl">
+        {/* Heading */}
+        <div className="mx-auto max-w-4xl text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
-            className="group relative flex flex-col p-5 bg-slate-50 dark:bg-slate-900/40 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 transition-all duration-300"
+            className="text-2xl font-medium leading-tight tracking-tight text-slate-900 transition-colors duration-300 dark:text-white md:text-4xl"
           >
-            <div className="absolute inset-0 opacity-40 dark:opacity-20 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] dark:bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:16px_16px]"></div>
-            
-            <div className="relative z-10 flex flex-col items-center text-center space-y-4">
-              <div className={`p-3 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-sm transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 ${card.color}`}>
-                <card.icon className="w-6 h-6" />
+            Let’s Build{" "}
+            <span className="bg-gradient-to-r from-blue-500 via-violet-500 to-blue-600 bg-clip-text font-bold text-transparent">
+              AI-Native
+            </span>{" "}
+            Products Together
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.08 }}
+            className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-slate-600 transition-colors duration-300 dark:text-slate-400 sm:text-base"
+          >
+            I help startups and teams build scalable frontend systems,
+            conversational AI interfaces, real-time applications, and modern
+            SaaS platforms.
+          </motion.p>
+
+          {/* Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.16 }}
+            className="mx-auto mt-10 flex w-full max-w-xs flex-col gap-4 sm:max-w-none sm:flex-row sm:items-center sm:justify-center"
+          >
+            {/* Primary Button */}
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                window.dispatchEvent(new Event("open-chatbox"));
+              }}
+              className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-xl shadow-slate-300/40 transition-all duration-300 hover:-translate-y-1 hover:bg-slate-800 hover:shadow-2xl dark:bg-white dark:text-slate-950 dark:shadow-violet-500/20 dark:hover:bg-slate-100 dark:hover:shadow-violet-400/30 sm:w-auto"
+            >
+              <BsChat className="h-5 w-5 text-violet-400 dark:text-violet-500" />
+              Work With Me
+
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
+
+            {/* Secondary Button */}
+            <a
+              href="#projects"
+              className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-slate-200/40 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/60 hover:bg-slate-50 dark:border-slate-700/80 dark:bg-slate-900/50 dark:text-white dark:shadow-black/20 dark:hover:bg-slate-900 sm:w-auto"
+            >
+              <Folder className="h-5 w-5 text-slate-500 dark:text-slate-300" />
+              View Projects
+            </a>
+
+            <CalendlyButton />
+          </motion.div>
+        </div>
+
+        {/* Cards */}
+        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {cards.map((card, index) => (
+            <motion.div
+              key={card.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 + index * 0.08 }}
+              className="group rounded-3xl border border-slate-200/60 bg-slate-50 p-6 shadow-slate-200/50 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:bg-white hover:shadow-xl hover:shadow-slate-200/70 dark:border-slate-800/60 dark:bg-slate-900/40 dark:shadow-black/50 dark:hover:border-slate-700 dark:hover:bg-slate-900/60 dark:hover:shadow-black/50"
+            >
+              {/* Icon */}
+              <div
+                className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-slate-200 bg-white shadow-sm transition-transform duration-300 group-hover:scale-105 dark:border-slate-700 dark:bg-slate-950 dark:shadow-lg ${card.color}`}
+              >
+                <card.icon className="h-8 w-8" />
               </div>
-              <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{card.title}</h3>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+
+              {/* Title */}
+              <h3 className="text-lg font-semibold leading-tight text-slate-900 dark:text-white">
+                {card.title}
+              </h3>
+
+              <p className="text-sm font-medium text-slate-600 dark:text-slate-200">
+                {card.subtitle}
+              </p>
+
+              <div className="my-4 h-px w-4 bg-slate-300 dark:bg-slate-600" />
+
+              <p className="text-xs leading-relaxed text-slate-500 dark:text-slate-400">
                 {card.description}
               </p>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+            </motion.div>
+          ))}
+        </div>
 
-      <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        className="flex justify-center"
-      >
-        <button 
-          onClick={(e) => {
-            e.preventDefault();
-            window.dispatchEvent(new Event('open-chatbox'));
-          }}
-          className="group inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 rounded-full text-xs font-semibold hover:bg-slate-800 dark:hover:bg-slate-200 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 cursor-pointer w-auto"
+        {/* <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.25 }}
+          className="mx-auto mt-10 flex w-fit max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-3 rounded-full border border-slate-200 bg-slate-50 px-10 py-3.5 text-xs shadow-slate-200/40 backdrop-blur transition-all duration-300 dark:border-slate-800/60 dark:bg-slate-900/40 dark:shadow-black/30 sm:gap-x-5 sm:px-20"
         >
-          <span>Connect here</span>
-          <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
-        </button>
-      </motion.div>
+          {stackItems.map((item, index) => (
+            <span key={item.name} className="contents">
+              {index > 0 && (
+                <span
+                  className="select-none text-slate-400 dark:text-slate-600"
+                  aria-hidden
+                >
+                  ·
+                </span>
+              )}
+
+              <span className="inline-flex items-center gap-2.5">
+                <span className="relative flex h-8 w-8 shrink-0 items-center justify-center">
+                  {(() => {
+                    const Icon = item.icon;
+
+                    return (
+                      <Icon
+                        className={`relative h-7 w-7 ${item.color}`}
+                      />
+                    );
+                  })()}
+                </span>
+
+                <span className="font-mono text-[11px] font-medium text-slate-700 dark:text-white">
+                  {item.name}
+                </span>
+              </span>
+            </span>
+          ))}
+
+          <span
+            className="select-none text-slate-400 dark:text-slate-600"
+            aria-hidden
+          >
+            ·
+          </span>
+
+          <span className="font-mono text-[11px] font-medium text-slate-700 dark:text-white">
+            and more
+          </span>
+        </motion.div> */}
+      </div>
     </section>
   );
 }
