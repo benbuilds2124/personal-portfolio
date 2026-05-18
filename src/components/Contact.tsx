@@ -1,49 +1,15 @@
 import { motion } from "motion/react";
 import {
-  Calendar,
   Folder,
   Briefcase,
   Brain,
   Zap,
   Layers,
   ArrowRight,
-  Calendar1Icon,
-  ChartBar,
 } from "lucide-react";
 
-import {
-  TbBrandReact,
-  TbBrandNextjs,
-  TbBrandTypescript,
-} from "react-icons/tb";
-
-import { SiOpenai } from "react-icons/si";
 import CalendlyButton from "./CalendlyButton";
-import Chatbox from "./Chatbox";
-import { BsChat, BsChatHeart, BsChatLeft } from "react-icons/bs";
-
-const stackItems = [
-  {
-    name: "React",
-    icon: TbBrandReact,
-    color: "text-cyan-500",
-  },
-  {
-    name: "Next.js",
-    icon: TbBrandNextjs,
-    color: "text-slate-900 dark:text-slate-200",
-  },
-  {
-    name: "OpenAI",
-    icon: SiOpenai,
-    color: "text-slate-900 dark:text-slate-200",
-  },
-  {
-    name: "TypeScript",
-    icon: TbBrandTypescript,
-    color: "text-blue-500",
-  },
-];
+import { BsChat } from "react-icons/bs";
 
 const cards = [
   {
