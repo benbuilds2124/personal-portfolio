@@ -80,7 +80,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative w-full overflow-hidden bg-white px-4 py-20 transition-colors duration-300 dark:bg-slate-950"
+      className="relative w-full overflow-hidden bg-white px-4 py-8 transition-colors duration-300 dark:bg-slate-950"
     >
       {/* Background Effect */}
       <img

@@ -69,7 +69,7 @@ export default function Services() {
       </div>
 
       {/* Header */}
-      <div className="mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+      <div className="mb-6 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <div>
           <motion.h2
             initial={{ opacity: 0, x: -20 }}
