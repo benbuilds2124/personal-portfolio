@@ -29,11 +29,7 @@ The site natively supports system-based Dark and Light modes, fluid scroll anima
 
 ## ⚡ Performance
 
-I've put a lot of effort into making this site fast and accessible. By aggressively splitting code chunks in Vite and ensuring solid ARIA labels throughout the UI, the site currently holds a perfect 100/100 across the board on Lighthouse. Check it out:
-
-<div align="center">
-  <img alt="Lighthouse Score" src="assets/lighthouse-score.png" width="800" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0,0,0,0.15);" />
-</div>
+I've put a lot of effort into making this site fast and accessible. By aggressively splitting code chunks in Vite and ensuring solid ARIA labels throughout the UI, the site currently holds a perfect 100/100 across the board on Lighthouse. 
 
 <br />
 
