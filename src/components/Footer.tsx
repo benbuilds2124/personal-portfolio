@@ -23,11 +23,11 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <h3 className="text-[11px] font-bold text-slate-900 dark:text-slate-100 uppercase tracking-widest">Pages</h3>
               <div className="flex flex-col gap-2 text-xs text-slate-600 dark:text-slate-400 font-medium">
-                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#">Home</a>
-                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#experience">Experience</a>
-                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#projects">Projects</a>
-                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#services">Services</a>
-                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#contact">Contact</a>
+                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="/">Home</a>
+                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="/#experience">Experience</a>
+                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="/projects">All Projects</a>
+                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="/#services">Services</a>
+                <a className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="/#contact">Contact</a>
               </div>
             </div>
             <div className="flex flex-col gap-3">

@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { Github, Twitter, Moon, Sun, Download, Menu, X } from 'lucide-react';
+import { Github, Moon, Sun, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import profileImg from '../../assets/benjaminliu.png';
 
@@ -49,14 +50,14 @@ export default function Navbar() {
       className="w-full md:max-w-5xl px-4 sm:px-4 rounded-2xl py-3 mx-auto sticky top-2 flex items-center justify-between z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md sm:mt-8"
     >
       <div className="flex items-center gap-2.5 min-w-0">
-        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Profile Image">
+        <Link to="/" aria-label="Go to Home">
           <img
             alt="Profile"
             fetchPriority="high"
             className="w-10 h-10 aspect-square rounded-full cursor-pointer hover:grayscale transition-all object-cover shrink-0"
             src={profileImg}
           />
-        </a>
+        </Link>
         <div className="flex flex-col min-w-0">
           <h5 className="leading-tight font-medium font-dancing-script text-base sm:text-lg whitespace-nowrap truncate">Benjamin Liu</h5>
           <div className="text-slate-600 dark:text-slate-400 text-[10px] font-medium h-3.5 flex items-center overflow-hidden min-w-0">
@@ -79,7 +80,7 @@ export default function Navbar() {
       <div className="items-center gap-2 sm:gap-6 flex shrink-0">
         <nav className="items-center gap-4 sm:flex hidden">
           {navItems.map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`} className="capitalize text-[11px] font-semibold tracking-wide text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 transition-colors">
+            <a key={item} href={`/#${item.toLowerCase()}`} className="capitalize text-[11px] font-semibold tracking-wide text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 transition-colors">
               {item}
             </a>
           ))}
@@ -118,7 +119,7 @@ export default function Navbar() {
             {navItems.map((item, index) => (
               <motion.a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`/#${item.toLowerCase()}`}
                 onClick={() => setIsMenuOpen(false)}
                 initial={{ opacity: 0, x: -15 }}
                 animate={{ opacity: 1, x: 0 }}
