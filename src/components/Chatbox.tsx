@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageCircle, X, CheckCircle2 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 export default function Chatbox() {
   const [isOpen, setIsOpen] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     query: ''
   });
+
+  const serviceId = import.meta.env.VITE_SERVICE_ID
+  const templateId = import.meta.env.VITE_TEMPLATE_ID
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY
 
   useEffect(() => {
     const handleOpen = () => setIsOpen(true);
@@ -21,35 +26,25 @@ export default function Chatbox() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
-    
-    try {
-      const response = await fetch('https://api.galactus.run/user-query/', {
-        method: 'POST',
-        headers: {
-          'accept': 'application/json, text/plain, */*',
-          'content-type': 'application/json',
-          'x-client-country': 'IN',
-          'x-timezone': 'Asia/Kolkata',
-          'x-user-agent': 'topmate'
-        },
-        body: JSON.stringify({
-          service: 37291,
-          email: formData.email,
-          name: formData.name,
-          phone: `+9112345678`,
-          answers_json: [],
-          subscribe_to_whatsapp: true,
-          price: 0,
-          user: 7118,
-          query: formData.query,
-          addons: [],
-          reallocate_query: false,
-          ai_search_booking: false
-        })
-      });
 
-      if (!response.ok) throw new Error('API Error');
-      
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.query,
+          subject: `Project Discussion - ${formData.name}`
+        },
+        publicKey
+      );
+
+      // const data = await response.json();
+      // console.log(data);
+
+      // if (!response.ok) throw new Error('API Error');
+
       setStatus('success');
       setTimeout(() => {
         setIsOpen(false);
@@ -93,46 +88,46 @@ export default function Chatbox() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-1.5 flex flex-col items-start text-left">
                     <label className="text-[13px] font-medium text-slate-700 dark:text-slate-300">Name</label>
-                    <input 
-                      required 
-                      type="text" 
+                    <input
+                      required
+                      type="text"
                       placeholder="Enter your name"
                       value={formData.name}
-                      onChange={e => setFormData({...formData, name: e.target.value})}
+                      onChange={e => setFormData({ ...formData, name: e.target.value })}
                       className="w-full text-sm px-3 py-2.5 bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 dark:text-slate-200 placeholder:text-slate-400"
                     />
                   </div>
-                  
+
                   <div className="space-y-1.5 flex flex-col items-start text-left">
                     <label className="text-[13px] font-medium text-slate-700 dark:text-slate-300">Email</label>
-                    <input 
-                      required 
-                      type="email" 
+                    <input
+                      required
+                      type="email"
                       placeholder="Enter your email"
                       value={formData.email}
-                      onChange={e => setFormData({...formData, email: e.target.value})}
+                      onChange={e => setFormData({ ...formData, email: e.target.value })}
                       className="w-full text-sm px-3 py-2.5 bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 dark:text-slate-200 placeholder:text-slate-400"
                     />
                   </div>
-                  
+
                   <div className="space-y-1.5 flex flex-col items-start text-left">
                     <label className="text-[13px] font-medium text-slate-700 dark:text-slate-300">Your Question</label>
-                    <textarea 
-                      required 
+                    <textarea
+                      required
                       rows={2}
                       placeholder="Try asking a detailed question"
                       value={formData.query}
-                      onChange={e => setFormData({...formData, query: e.target.value})}
+                      onChange={e => setFormData({ ...formData, query: e.target.value })}
                       className="w-full resize-none text-sm px-3 py-2.5 bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 dark:text-slate-200 placeholder:text-slate-400"
                     />
                   </div>
-                  
+
                   {status === 'error' && (
                     <p className="text-xs text-red-500 font-medium text-left">Failed to send. Please try again.</p>
                   )}
 
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     disabled={status === 'loading'}
                     className="w-full mt-2 flex items-center justify-center py-2.5 bg-slate-900 hover:bg-slate-800 disabled:bg-slate-700 dark:bg-slate-100 dark:hover:bg-white dark:disabled:bg-slate-300 text-white dark:text-slate-900 rounded-lg font-medium text-sm transition-colors cursor-pointer"
                   >
