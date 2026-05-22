@@ -19,15 +19,19 @@ import codebyedgeImgMain from '../../assets/projects/codebyedge/main.png';
 import codebyedgeImgAbout from '../../assets/projects/codebyedge/about.png';
 import codebyedgeImgRingCollection from '../../assets/projects/codebyedge/ring-collection.png';
 
-import shiftTechnologyImg from '../../assets/shift-technology.jpg';
+import aiDateAssistantImgThumbnail from '../../assets/projects/ai-date-assistant-rn/thumbnail.png';
+import aiDateAssistantImg1 from '../../assets/projects/ai-date-assistant-rn/1.png';
+import aiDateAssistantImg2 from '../../assets/projects/ai-date-assistant-rn/2.png';
+import aiDateAssistantImg3 from '../../assets/projects/ai-date-assistant-rn/3.png';
+import aiDateAssistantImg4 from '../../assets/projects/ai-date-assistant-rn/4.png';
+import aiDateAssistantImg5 from '../../assets/projects/ai-date-assistant-rn/5.png';
+import aiDateAssistantImg6 from '../../assets/projects/ai-date-assistant-rn/6.png';
+import aiDateAssistantImg7 from '../../assets/projects/ai-date-assistant-rn/7.png';
+import aiDateAssistantImg8 from '../../assets/projects/ai-date-assistant-rn/8.png';
 
-import dkvLogoImg from '../../assets/dkv-logo.jpg';
-
-import exoworldsLogoImg from '../../assets/exoworlds-logo.jpg';
-
-import xmrGgImg from '../../assets/xmr-gg.jpg';
-
-import aiCtaBackgroundImg from '../../assets/ai_cta_background_effect.png';
+import rakuearnImg from "../../assets/projects/rakuearn/rakuearn.webp";
+import rakuearnImgHowItWorks from "../../assets/projects/rakuearn/how-it-work.png";
+import rakuearnImgPointExchange from "../../assets/projects/rakuearn/point-exchange.png";
 
 export interface Project {
   id: number;
@@ -48,6 +52,18 @@ export const getProjectGalleryImages = (project: Project) =>
   project.images?.length ? project.images : [project.image];
 
 export const projects: Project[] = [
+  {
+    id: 1,
+    title: 'AmoreAI | AI-Powered Dating Assistant Coach',
+    description:
+      'Amore AI is an AI-powered dating coach that helps users improve their dating profiles, choose stronger photos, rewrite bios, and generate better conversation starters. The platform uses personalized AI analysis to review profile quality, rank dating photos, suggest engaging openers, and coach users through chat replies. Built for users across Tinder, Bumble, Hinge, and other dating apps, it focuses on improving match rates, reducing messaging anxiety, and creating more confident online dating experiences.',
+    image: aiDateAssistantImgThumbnail,
+    link: '',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=tech.asoasis.amore_ai',
+    appStoreLink: 'https://apps.apple.com/in/app/amoreai-ai-dating-coach/id6761085824',
+    images: [aiDateAssistantImg1, aiDateAssistantImg2, aiDateAssistantImg3, aiDateAssistantImg4, aiDateAssistantImg5, aiDateAssistantImg6, aiDateAssistantImg7, aiDateAssistantImg8],
+    tags: ['React Native', 'TypeScript', 'Expo', "OpenAI API", "AI", "LLM", "Automation", "Supabase", "PostgreSQL", "UI/UX", "Pixel Perfect Design"],
+  },
   {
     id: 1,
     title: 'XMR Play | Real-Time iGaming Platform',
@@ -77,7 +93,7 @@ export const projects: Project[] = [
     tags: ['React.js', 'Three.js', 'GSAP', 'REST APIs', 'Full Stack', 'TypeScript', 'Docker', 'AWS', 'Stripe', 'PayPal', 'Shopify', 'E-commerce'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Personal Portfolio',
     description:
       'A modern, performance‑focused portfolio built with React 19, Tailwind CSS v4, and the Motion API. Designed with accessibility, smooth scroll‑based animations, and subtle micro‑interactions to feel fast and polished on every device.',
@@ -87,6 +103,16 @@ export const projects: Project[] = [
     githubLink: 'https://github.com/benbuilds2124/personal-portfolio',
     tags: ['React.js', 'TailwindCSS', 'Motion', 'Vercel', "Vite", "TypeScript", "EmailJS", "React Icons"],
   },
+  {
+    id: 5,
+    title: 'Raku Earn | AI Survey Automation & Rewards Platform',
+    description:
+      'Raku Earn is an AI-powered rewards platform that helps users earn points by automatically completing surveys through a browser-based automation assistant. The platform combines a point-earning website, Chrome extension, AI dashboard, and reward redemption system where users can exchange points for bank transfers, PayPay, and gift cards. Its core experience focuses on profile-based AI form completion, real-time point tracking, and a simple rewards workflow designed to reduce manual survey effort.',
+    image: rakuearnImg,
+    link: 'https://rakuearn.com/en',
+    images: [ rakuearnImg, rakuearnImgHowItWorks, rakuearnImgPointExchange],
+    tags: ['React.js', 'TypeScript', 'Next.js', "OpenAI API", "AI", "LLM", "Automation", "Supabase", "PostgreSQL", "UI/UX", "Pixel Perfect Design", "Payment Processing"],
+  }
 ];
 
 export const getSkillColor = (skill: string) => {
