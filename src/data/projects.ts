@@ -33,6 +33,8 @@ import rakuearnImg from "../../assets/projects/rakuearn/rakuearn.webp";
 import rakuearnImgHowItWorks from "../../assets/projects/rakuearn/how-it-work.png";
 import rakuearnImgPointExchange from "../../assets/projects/rakuearn/point-exchange.png";
 
+import teamDryftImg from "../../assets/projects/teamdryft.png";
+
 export interface Project {
   id: number;
   title: string;
@@ -110,8 +112,17 @@ export const projects: Project[] = [
       'Raku Earn is an AI-powered rewards platform that helps users earn points by automatically completing surveys through a browser-based automation assistant. The platform combines a point-earning website, Chrome extension, AI dashboard, and reward redemption system where users can exchange points for bank transfers, PayPay, and gift cards. Its core experience focuses on profile-based AI form completion, real-time point tracking, and a simple rewards workflow designed to reduce manual survey effort.',
     image: rakuearnImg,
     link: 'https://rakuearn.com/en',
-    images: [ rakuearnImg, rakuearnImgHowItWorks, rakuearnImgPointExchange],
+    images: [rakuearnImg, rakuearnImgHowItWorks, rakuearnImgPointExchange],
     tags: ['React.js', 'TypeScript', 'Next.js', "OpenAI API", "AI", "LLM", "Automation", "Supabase", "PostgreSQL", "UI/UX", "Pixel Perfect Design", "Payment Processing"],
+  },
+  {
+    id: 6,
+    title: "Dryft | Automotive Parts Discovery Platform",
+    description: "Dryft is a fitment-first automotive parts discovery platform that helps drivers and car enthusiasts find compatible aftermarket parts for their exact vehicle. Users can search by make, model, year, and trim, compare trusted brands and vendors, review compatibility, and discover parts across key automotive categories in one streamlined interface.",
+    image: teamDryftImg,
+    link: "https://www.teamdryft.com/",
+    images: [teamDryftImg],
+    tags: ['Framer', 'Tailwind CSS', 'HTML', "CSS", "US/UX", "Frontend Development", "Animation"]
   }
 ];
 
