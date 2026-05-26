@@ -29,6 +29,9 @@ import aiDateAssistantImg6 from '../../assets/projects/ai-date-assistant-rn/6.pn
 import aiDateAssistantImg7 from '../../assets/projects/ai-date-assistant-rn/7.png';
 import aiDateAssistantImg8 from '../../assets/projects/ai-date-assistant-rn/8.png';
 
+import aktaThumnailImg from "../../assets/projects/akta.pro/thmbnail.png";
+import aktaLandingImg from "../../assets/projects/akta.pro/landing.png";
+
 import rakuearnImg from "../../assets/projects/rakuearn/rakuearn.webp";
 import rakuearnImgHowItWorks from "../../assets/projects/rakuearn/how-it-work.png";
 import rakuearnImgPointExchange from "../../assets/projects/rakuearn/point-exchange.png";
@@ -67,7 +70,7 @@ export const projects: Project[] = [
     tags: ['React Native', 'TypeScript', 'Expo', "OpenAI API", "AI", "LLM", "Automation", "Supabase", "PostgreSQL", "UI/UX", "Pixel Perfect Design"],
   },
   {
-    id: 1,
+    id: 2,
     title: 'XMR Play | Real-Time iGaming Platform',
     description:
       'A high-concurrency real-time iGaming platform for web and mobile users, supporting live gameplay, betting systems, wallet operations, and real-time user engagement. Built with React, Next.js, TypeScript, and WebSocket-based infrastructure, the platform delivers low-latency gameplay synchronization, live chat, transaction tracking, AI-assisted moderation, and scalable user experiences for thousands of concurrent players.',
@@ -77,7 +80,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Zustand', 'Node.js', 'WebSocket', 'AI Integration', "MongoDB", "Real-Time Systems", "Docker", "AWS"],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Code by Edge | Luxury Jewelry E-Commerce & Morse Code Customizer',
     description:
       'A luxury jewelry e-commerce platform and Morse code customization studio built for a UK-based bespoke jewelry brand. As a Senior Frontend Engineer, I developed interactive product customization experiences using React and Three.js, enabling users to personalize rings and jewelry with encoded Morse code messages, gemstone selections, metal options, and real-time visual previews. The platform also included a polished e-commerce experience with product browsing, dynamic configuration flows, checkout integration, and secure payment processing to support high-value personalized jewelry purchases.',
@@ -123,6 +126,29 @@ export const projects: Project[] = [
     link: "https://www.teamdryft.com/",
     images: [teamDryftImg],
     tags: ['Framer', 'Tailwind CSS', 'HTML', "CSS", "US/UX", "Frontend Development", "Animation"]
+  },
+  {
+    id: 7,
+    title: 'Akta | AI-Native News Intelligence API',
+    description:
+      'A developer-focused news intelligence platform that provides structured company news data for AI agents, data teams, and enterprise workflows. I built and optimized the frontend experience for the public marketing site and product-facing API entry points, focusing on clear positioning, conversion-driven CTAs, responsive layouts, pricing presentation, feature education, and developer onboarding. The platform highlights private entity resolution across 20M+ parent companies, subsidiaries, trading names, and namesakes, custom endpoint configuration, contextual intelligence, materiality scoring, sentiment analysis, geographic tagging, topic classification, and source scoring. I also worked on UI sections for API sample responses, use-case segmentation, pricing tiers, enterprise trust messaging, and playground/documentation navigation to help technical users quickly understand the value of the API and start testing it.',
+    image: aktaThumnailImg,
+    link: 'https://www.akta.pro',
+    images: [
+      aktaLandingImg
+    ],
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Framer Motion',
+      'API Integration',
+      'AI Workflows',
+      'Developer Experience',
+      'Enterprise SaaS',
+      'Responsive UI',
+      'Performance Optimization'
+    ],
   }
 ];
 
