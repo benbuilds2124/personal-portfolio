@@ -47,6 +47,9 @@ import onewheel7Img from "../../assets/projects/onewheel/7.png";
 
 import teamDryftImg from "../../assets/projects/teamdryft.png";
 
+import medicareThumbImg from "@/assets/projects/medicare/thumb.png";
+import medicareHomeImg from "@/assets/projects/medicare/home.png";
+
 export interface Project {
   id: number;
   title: string;
@@ -183,7 +186,7 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Raku Earn | AI Survey Automation & Rewards Platform",
+    title: "RakuEarn",
     description:
       "Raku Earn is an AI-powered rewards platform that helps users earn points by automatically completing surveys through a browser-based automation assistant. The platform combines a point-earning website, Chrome extension, AI dashboard, and reward redemption system where users can exchange points for bank transfers, PayPay, and gift cards. Its core experience focuses on profile-based AI form completion, real-time point tracking, and a simple rewards workflow designed to reduce manual survey effort.",
     image: rakuearnImg,
@@ -222,7 +225,6 @@ export const projects: Project[] = [
       "Animation",
     ],
   },
-
   {
     id: 7,
     title: "Akta | AI-Native News Intelligence API",
@@ -246,7 +248,7 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    title: "AmoreAI | AI-Powered Dating Assistant Coach",
+    title: "AmoreAI",
     description:
       "Amore AI is an AI-powered dating coach that helps users improve their dating profiles, choose stronger photos, rewrite bios, and generate better conversation starters. The platform uses personalized AI analysis to review profile quality, rank dating photos, suggest engaging openers, and coach users through chat replies. Built for users across Tinder, Bumble, Hinge, and other dating apps, it focuses on improving match rates, reducing messaging anxiety, and creating more confident online dating experiences.",
     image: aiDateAssistantImgThumbnail,
@@ -277,6 +279,33 @@ export const projects: Project[] = [
       "PostgreSQL",
       "UI/UX",
       "Pixel Perfect Design",
+    ],
+  },
+  {
+    id: 9,
+    title: "MediCare AI",
+    description:
+      "MediCare AI is a modern AI-powered healthcare platform that helps users access healthcare information, discover relevant medical services, and receive intelligent guidance through conversational AI. The platform leverages advanced LLM technology to provide personalized healthcare assistance, answer medical-related questions, streamline patient interactions, and improve access to healthcare resources. Built with a scalable cloud-native architecture, MediCare AI delivers a seamless user experience through AI-driven conversations, secure data management, and responsive web interfaces.",
+    image: medicareThumbImg,
+    link: "https://aimedicare.vercel.app",
+    githubLink: "https://github.com/benbuilds2124/medicare-ai",
+    images: [medicareHomeImg, medicareThumbImg],
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "OpenAI API",
+      "AI",
+      "LLM",
+      "Healthcare",
+      "Conversational AI",
+      "Authentication",
+      "Responsive Design",
+      "UI/UX",
+      "Automation",
+      "Web Application",
     ],
   },
 ];
