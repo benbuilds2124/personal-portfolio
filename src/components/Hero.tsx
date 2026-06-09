@@ -11,24 +11,28 @@ import {
   TbBrandReactNative,
   TbBrain,
 } from "react-icons/tb";
-import { Calendar, Folder, ArrowRight } from "lucide-react";
+import { Folder, ArrowRight } from "lucide-react";
 import { BsChat } from "react-icons/bs";
 
 const techStack = [
+  {
+    name: "Next.js",
+    icon: TbBrandNextjs,
+    color: "text-slate-900 dark:text-white",
+  },
+  { name: "Supabase", icon: TbDatabase, color: "text-[#4169E1]" },
+  { name: "PostgreSQL", icon: TbDatabase, color: "text-[#4169E1]" },
   { name: "React", icon: TbBrandReact, color: "text-[#61DAFB]" },
-  { name: "Next.js", icon: TbBrandNextjs, color: "text-slate-900 dark:text-white" },
   { name: "TypeScript", icon: TbBrandTypescript, color: "text-[#3178C6]" },
-  { name: "JavaScript", icon: TbBrandJavascript, color: "text-[#F7DF1E]" },
-  { name: "React Native", icon: TbBrandReactNative, color: "text-[#61DAFB]" },
+  { name: "React Native / Expo", icon: TbBrandReactNative, color: "text-[#61DAFB]" },
   { name: "Node.js", icon: TbBrandNodejs, color: "text-[#339933]" },
+  { name: "MongoDB", icon: TbDatabase, color: "text-[#47A248]" },
   { name: "GraphQL", icon: TbApi, color: "text-pink-500" },
   { name: "AI Integration", icon: TbBrain, color: "text-purple-500" },
   { name: "LLM Applications", icon: TbBrain, color: "text-fuchsia-500" },
   { name: "Real-Time Systems", icon: TbApi, color: "text-cyan-500" },
   { name: "Frontend Architecture", icon: TbApi, color: "text-orange-500" },
   { name: "Tailwind CSS", icon: TbBrandTailwind, color: "text-[#06B6D4]" },
-  { name: "MongoDB", icon: TbDatabase, color: "text-[#47A248]" },
-  { name: "PostgreSQL", icon: TbDatabase, color: "text-[#4169E1]" },
 ];
 
 export default function Hero() {
@@ -58,16 +62,13 @@ export default function Hero() {
             </span>{" "}
             AI-powered products,
             <br className="hidden md:block" />
-
             <span className="relative inline-block">
               <span className="relative z-10">real-time experiences,</span>
             </span>{" "}
             <br className="hidden md:block" />
-
             <span className="relative inline-block">
               <span className="relative z-10">and scalable systems that</span>
             </span>
-
             <span className="relative ml-2 inline-block font-dancing-script font-bold text-amber-600 dark:text-amber-400">
               grow
               <motion.svg
@@ -178,7 +179,10 @@ export default function Hero() {
                   key={i}
                   className="flex cursor-default items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-slate-700 shadow-sm transition-transform hover:scale-105 dark:border-slate-800 dark:bg-slate-900/50 dark:text-slate-300"
                 >
-                  <tech.icon className={`h-3.5 w-3.5 ${tech.color}`} strokeWidth={1.2} />
+                  <tech.icon
+                    className={`h-3.5 w-3.5 ${tech.color}`}
+                    strokeWidth={1.2}
+                  />
                   <span className="font-mono text-[11px] font-medium">
                     {tech.name}
                   </span>
