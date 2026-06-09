@@ -1,8 +1,8 @@
-import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import ProjectCard from '../components/ProjectCard';
-import { projects } from '../data/projects';
+import { motion } from "motion/react";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+import ProjectCard from "../components/ProjectCard";
+import { projects } from "../data/projects";
 
 export default function ProjectsPage() {
   return (
@@ -20,7 +20,10 @@ export default function ProjectsPage() {
           animate={{ opacity: 1, x: 0 }}
           className="text-xl md:text-2xl font-medium leading-tight tracking-tight text-slate-900 dark:text-slate-50"
         >
-          All <span className="font-dancing-script font-bold text-emerald-500">Projects</span>
+          All{" "}
+          <span className="font-dancing-script font-bold text-emerald-500">
+            Projects
+          </span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: -20 }}
@@ -34,7 +37,9 @@ export default function ProjectsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <ProjectCard key={project.id} project={project} index={index} />
+          <div key={index}>
+            <ProjectCard project={project} index={index} />
+          </div>
         ))}
       </div>
     </section>

@@ -50,8 +50,17 @@ import teamDryftImg from "../../assets/projects/teamdryft.png";
 import medicareThumbImg from "@/assets/projects/medicare/thumb.png";
 import medicareHomeImg from "@/assets/projects/medicare/home.png";
 
+import noverThumbnailImg from "@/assets/projects/nover/nover_landing.png";
+import noverAppImg from "@/assets/projects/nover/nover_app.png";
+import nover1Img from "@/assets/projects/nover/nover_1.png";
+import nover2Img from "@/assets/projects/nover/nover_2.png";
+import nover3Img from "@/assets/projects/nover/nover_3.png";
+import nover4Img from "@/assets/projects/nover/nover_4.png";
+import nover5Img from "@/assets/projects/nover/nover_5.png";
+import nover6Img from "@/assets/projects/nover/nover_6.png";
+import nover7Img from "@/assets/projects/nover/nover_7.png";
+
 export interface Project {
-  id: number;
   title: string;
   description: string;
   image: string;
@@ -71,7 +80,150 @@ export const getProjectGalleryImages = (project: Project) =>
 
 export const projects: Project[] = [
   {
-    id: 1,
+    title: "Nover Studio",
+    description:
+      "A professional AI visual generation suite built for designers, creators, artists, and creative teams who need precise control over AI-generated content. I designed and optimized the frontend experience across the marketing website and product onboarding flows, focusing on communicating Nover's unique 'design-first' approach to AI image creation. The platform enables users to generate, edit, remix, and control visual content through an intuitive interface with real-time scene manipulation, camera positioning, lighting controls, pose adjustments, depth management, object placement, text editing, and advanced AI workflow orchestration. I worked on conversion-focused landing pages, feature showcase sections, interactive product demonstrations, creator-focused messaging, pricing and onboarding experiences, workflow education, and trust-building content that highlights Nover's ability to replace prompt-heavy image generation with precise visual design controls. The platform combines multiple state-of-the-art AI models, node-based creative workflows, live editing capabilities, image generation, in-painting, out-painting, scene composition tools, and professional production features within a unified creative environment.",
+    image: noverThumbnailImg,
+    link: "https://www.nover.studio",
+    images: [
+      noverThumbnailImg,
+      nover1Img,
+      nover2Img,
+      nover3Img,
+      nover4Img,
+      nover5Img,
+      nover6Img,
+      nover7Img,
+      noverAppImg,
+    ],
+    tags: [
+      "Next.js",
+      "Supabase", 
+      "PostgreSQL",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "AI Image Generation",
+      "OpenAI",
+      "Claude",
+      "Visual Editing",
+      "Generative AI",
+      "Designer Experience",
+      "SaaS Platform",
+    ],
+  },
+  {
+    title: "RakuEarn",
+    description:
+      "Raku Earn is an AI-powered rewards platform that helps users earn points by automatically completing surveys through a browser-based automation assistant. The platform combines a point-earning website, Chrome extension, AI dashboard, and reward redemption system where users can exchange points for bank transfers, PayPay, and gift cards. Its core experience focuses on profile-based AI form completion, real-time point tracking, and a simple rewards workflow designed to reduce manual survey effort.",
+    image: rakuearnImg,
+    link: "https://rakuearn.com/en",
+    images: [rakuearnImg, rakuearnImgHowItWorks, rakuearnImgPointExchange],
+    tags: [
+      "Next.js",
+      "Supabase",
+      "PostgreSQL",
+      "TypeScript",
+      "React.js",
+      "OpenAI API",
+      "AI",
+      "LLM",
+      "Automation",
+      "UI/UX",
+      "Pixel Perfect Design",
+      "Payment Processing",
+    ],
+  },
+  {
+    title: "AmoreAI",
+    description:
+      "Amore AI is an AI-powered dating coach that helps users improve their dating profiles, choose stronger photos, rewrite bios, and generate better conversation starters. The platform uses personalized AI analysis to review profile quality, rank dating photos, suggest engaging openers, and coach users through chat replies. Built for users across Tinder, Bumble, Hinge, and other dating apps, it focuses on improving match rates, reducing messaging anxiety, and creating more confident online dating experiences.",
+    image: aiDateAssistantImgThumbnail,
+    link: "",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=tech.asoasis.amore_ai",
+    appStoreLink:
+      "https://apps.apple.com/in/app/amoreai-ai-dating-coach/id6761085824",
+    images: [
+      aiDateAssistantImg1,
+      aiDateAssistantImg2,
+      aiDateAssistantImg3,
+      aiDateAssistantImg4,
+      aiDateAssistantImg5,
+      aiDateAssistantImg6,
+      aiDateAssistantImg7,
+      aiDateAssistantImg8,
+    ],
+    tags: [
+      "Expo",
+      "Supabase",
+      "PostgreSQL",
+      "TypeScript",
+      "React Native",
+      "OpenAI API",
+      "AI",
+      "LLM",
+      "Automation",
+      "UI/UX",
+      "Pixel Perfect Design",
+    ],
+  },
+  {
+    title: "MediCare AI",
+    description:
+      "MediCare AI is a modern AI-powered healthcare platform that helps users access healthcare information, discover relevant medical services, and receive intelligent guidance through conversational AI. The platform leverages advanced LLM technology to provide personalized healthcare assistance, answer medical-related questions, streamline patient interactions, and improve access to healthcare resources. Built with a scalable cloud-native architecture, MediCare AI delivers a seamless user experience through AI-driven conversations, secure data management, and responsive web interfaces.",
+    image: medicareThumbImg,
+    link: "https://aimedicare.vercel.app",
+    githubLink: "https://github.com/benbuilds2124/medicare-ai",
+    images: [medicareHomeImg, medicareThumbImg],
+    tags: [
+      "Next.js",
+      "Supabase",
+      "PostgreSQL",
+      "React.js",
+      "TypeScript",
+      "OpenAI API",
+      "AI",
+      "LLM",
+      "Healthcare",
+      "Conversational AI",
+      "UI/UX",
+      "Automation",
+      "Web Application",
+    ],
+  },
+  {
+    title: "XMR Play | Real-Time iGaming Platform",
+    description:
+      "A high-concurrency real-time iGaming platform for web and mobile users, supporting live gameplay, betting systems, wallet operations, and real-time user engagement. Built with React, Next.js, TypeScript, and WebSocket-based infrastructure, the platform delivers low-latency gameplay synchronization, live chat, transaction tracking, AI-assisted moderation, and scalable user experiences for thousands of concurrent players.",
+    image: xmrggThumbnailImg,
+    link: "https://xmr.gg",
+    images: [
+      xmrggHomepageImg,
+      xmrggCrashImg,
+      xmrggMinesImg,
+      xmrggPlinkoImg,
+      xmrggTowerImg,
+      xmrggAffiliateImg,
+      xmrggRewardsImg,
+      xmrggUserImg,
+      xmrggSportsImg,
+    ],
+    tags: [
+      "Next.js",
+      "MongoDB",
+      "TypeScript",
+      "Zustand",
+      "Node.js",
+      "WebSocket",
+      "AI Integration",
+      "Real-Time Systems",
+      "Docker",
+      "AWS",
+    ],
+  },
+
+  {
     title: "Onewheel",
     description:
       "A large-scale connected mobility ecosystem supporting smart electric vehicles, mobile applications, rider communities, GPS route tracking, real-time board telemetry, firmware management, and personalized ride experiences. The platform integrates Bluetooth-connected hardware, cloud-based analytics, live ride monitoring, digital ride customization, social engagement systems, and performance tracking infrastructure. Designed to support thousands of active riders globally, the system delivers seamless communication between hardware devices, mobile applications, and cloud services while maintaining responsive user experiences and reliable telemetry synchronization.",
@@ -103,7 +255,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
     title: "Code by Edge | Luxury Jewelry E-Commerce & Morse Code Customizer",
     description:
       "A luxury jewelry e-commerce platform and Morse code customization studio built for a UK-based bespoke jewelry brand. As a Senior Frontend Engineer, I developed interactive product customization experiences using React and Three.js, enabling users to personalize rings and jewelry with encoded Morse code messages, gemstone selections, metal options, and real-time visual previews. The platform also included a polished e-commerce experience with product browsing, dynamic configuration flows, checkout integration, and secure payment processing to support high-value personalized jewelry purchases.",
@@ -133,39 +284,8 @@ export const projects: Project[] = [
       "Shopify",
     ],
   },
+
   {
-    id: 2,
-    title: "XMR Play | Real-Time iGaming Platform",
-    description:
-      "A high-concurrency real-time iGaming platform for web and mobile users, supporting live gameplay, betting systems, wallet operations, and real-time user engagement. Built with React, Next.js, TypeScript, and WebSocket-based infrastructure, the platform delivers low-latency gameplay synchronization, live chat, transaction tracking, AI-assisted moderation, and scalable user experiences for thousands of concurrent players.",
-    image: xmrggThumbnailImg,
-    link: "https://xmr.gg",
-    images: [
-      xmrggHomepageImg,
-      xmrggCrashImg,
-      xmrggMinesImg,
-      xmrggPlinkoImg,
-      xmrggTowerImg,
-      xmrggAffiliateImg,
-      xmrggRewardsImg,
-      xmrggUserImg,
-      xmrggSportsImg,
-    ],
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "Zustand",
-      "Node.js",
-      "WebSocket",
-      "AI Integration",
-      "MongoDB",
-      "Real-Time Systems",
-      "Docker",
-      "AWS",
-    ],
-  },
-  {
-    id: 4,
     title: "Personal Portfolio",
     description:
       "A modern, performance‑focused portfolio built with React 19, Tailwind CSS v4, and the Motion API. Designed with accessibility, smooth scroll‑based animations, and subtle micro‑interactions to feel fast and polished on every device.",
@@ -184,31 +304,8 @@ export const projects: Project[] = [
       "React Icons",
     ],
   },
+
   {
-    id: 5,
-    title: "RakuEarn",
-    description:
-      "Raku Earn is an AI-powered rewards platform that helps users earn points by automatically completing surveys through a browser-based automation assistant. The platform combines a point-earning website, Chrome extension, AI dashboard, and reward redemption system where users can exchange points for bank transfers, PayPay, and gift cards. Its core experience focuses on profile-based AI form completion, real-time point tracking, and a simple rewards workflow designed to reduce manual survey effort.",
-    image: rakuearnImg,
-    link: "https://rakuearn.com/en",
-    images: [rakuearnImg, rakuearnImgHowItWorks, rakuearnImgPointExchange],
-    tags: [
-      "React.js",
-      "TypeScript",
-      "Next.js",
-      "OpenAI API",
-      "AI",
-      "LLM",
-      "Automation",
-      "Supabase",
-      "PostgreSQL",
-      "UI/UX",
-      "Pixel Perfect Design",
-      "Payment Processing",
-    ],
-  },
-  {
-    id: 6,
     title: "Dryft | Automotive Parts Discovery Platform",
     description:
       "Dryft is a fitment-first automotive parts discovery platform that helps drivers and car enthusiasts find compatible aftermarket parts for their exact vehicle. Users can search by make, model, year, and trim, compare trusted brands and vendors, review compatibility, and discover parts across key automotive categories in one streamlined interface.",
@@ -226,7 +323,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 7,
     title: "Akta | AI-Native News Intelligence API",
     description:
       "A developer-focused news intelligence platform that provides structured company news data for AI agents, data teams, and enterprise workflows. I built and optimized the frontend experience for the public marketing site and product-facing API entry points, focusing on clear positioning, conversion-driven CTAs, responsive layouts, pricing presentation, feature education, and developer onboarding. The platform highlights private entity resolution across 20M+ parent companies, subsidiaries, trading names, and namesakes, custom endpoint configuration, contextual intelligence, materiality scoring, sentiment analysis, geographic tagging, topic classification, and source scoring. I also worked on UI sections for API sample responses, use-case segmentation, pricing tiers, enterprise trust messaging, and playground/documentation navigation to help technical users quickly understand the value of the API and start testing it.",
@@ -244,68 +340,6 @@ export const projects: Project[] = [
       "Enterprise SaaS",
       "Responsive UI",
       "Performance Optimization",
-    ],
-  },
-  {
-    id: 8,
-    title: "AmoreAI",
-    description:
-      "Amore AI is an AI-powered dating coach that helps users improve their dating profiles, choose stronger photos, rewrite bios, and generate better conversation starters. The platform uses personalized AI analysis to review profile quality, rank dating photos, suggest engaging openers, and coach users through chat replies. Built for users across Tinder, Bumble, Hinge, and other dating apps, it focuses on improving match rates, reducing messaging anxiety, and creating more confident online dating experiences.",
-    image: aiDateAssistantImgThumbnail,
-    link: "",
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=tech.asoasis.amore_ai",
-    appStoreLink:
-      "https://apps.apple.com/in/app/amoreai-ai-dating-coach/id6761085824",
-    images: [
-      aiDateAssistantImg1,
-      aiDateAssistantImg2,
-      aiDateAssistantImg3,
-      aiDateAssistantImg4,
-      aiDateAssistantImg5,
-      aiDateAssistantImg6,
-      aiDateAssistantImg7,
-      aiDateAssistantImg8,
-    ],
-    tags: [
-      "React Native",
-      "TypeScript",
-      "Expo",
-      "OpenAI API",
-      "AI",
-      "LLM",
-      "Automation",
-      "Supabase",
-      "PostgreSQL",
-      "UI/UX",
-      "Pixel Perfect Design",
-    ],
-  },
-  {
-    id: 9,
-    title: "MediCare AI",
-    description:
-      "MediCare AI is a modern AI-powered healthcare platform that helps users access healthcare information, discover relevant medical services, and receive intelligent guidance through conversational AI. The platform leverages advanced LLM technology to provide personalized healthcare assistance, answer medical-related questions, streamline patient interactions, and improve access to healthcare resources. Built with a scalable cloud-native architecture, MediCare AI delivers a seamless user experience through AI-driven conversations, secure data management, and responsive web interfaces.",
-    image: medicareThumbImg,
-    link: "https://aimedicare.vercel.app",
-    githubLink: "https://github.com/benbuilds2124/medicare-ai",
-    images: [medicareHomeImg, medicareThumbImg],
-    tags: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Supabase",
-      "PostgreSQL",
-      "OpenAI API",
-      "AI",
-      "LLM",
-      "Healthcare",
-      "Conversational AI",
-      "Authentication",
-      "Responsive Design",
-      "UI/UX",
-      "Automation",
-      "Web Application",
     ],
   },
 ];
