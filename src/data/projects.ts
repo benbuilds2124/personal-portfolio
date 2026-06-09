@@ -183,7 +183,7 @@ export const projects: Project[] = [
       "React.js",
       "TypeScript",
       "OpenAI API",
-      "AI",
+      "Claude",
       "LLM",
       "Healthcare",
       "Conversational AI",
