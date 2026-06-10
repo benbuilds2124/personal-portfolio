@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from '@vercel/analytics/react'
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
