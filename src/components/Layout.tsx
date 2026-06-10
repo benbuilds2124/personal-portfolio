@@ -1,9 +1,9 @@
-import { Outlet } from 'react-router-dom';
-import { Analytics } from "@vercel/analytics/next"
+import { Outlet } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/next";
 
-import Navbar from './Navbar';
-import Footer from './Footer';
-import Chatbox from './Chatbox';
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Chatbox from "./Chatbox";
 
 export default function Layout() {
   return (
