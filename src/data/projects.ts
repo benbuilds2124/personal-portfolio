@@ -1,51 +1,57 @@
-import portfolioImg from "../../assets/portfolio.png";
+import portfolioImg from "@/assets/portfolio.png";
 
-import xmrggThumbnailImg from "../../assets/projects/xmr.gg/thumbnail.png";
-import xmrggHomepageImg from "../../assets/projects/xmr.gg/main.png";
-import xmrggCrashImg from "../../assets/projects/xmr.gg/crash.png";
-import xmrggMinesImg from "../../assets/projects/xmr.gg/mines.png";
-import xmrggPlinkoImg from "../../assets/projects/xmr.gg/plinko.png";
-import xmrggTowerImg from "../../assets/projects/xmr.gg/tower.png";
-import xmrggAffiliateImg from "../../assets/projects/xmr.gg/affiliate.png";
-import xmrggRewardsImg from "../../assets/projects/xmr.gg/rewards.png";
-import xmrggUserImg from "../../assets/projects/xmr.gg/user.png";
-import xmrggSportsImg from "../../assets/projects/xmr.gg/sports.png";
+import xmrggThumbnailImg from "@/assets/projects/xmr.gg/thumbnail.png";
+import xmrggHomepageImg from "@/assets/projects/xmr.gg/main.png";
+import xmrggCrashImg from "@/assets/projects/xmr.gg/crash.png";
+import xmrggMinesImg from "@/assets/projects/xmr.gg/mines.png";
+import xmrggPlinkoImg from "@/assets/projects/xmr.gg/plinko.png";
+import xmrggTowerImg from "@/assets/projects/xmr.gg/tower.png";
+import xmrggAffiliateImg from "@/assets/projects/xmr.gg/affiliate.png";
+import xmrggRewardsImg from "@/assets/projects/xmr.gg/rewards.png";
+import xmrggUserImg from "@/assets/projects/xmr.gg/user.png";
+import xmrggSportsImg from "@/assets/projects/xmr.gg/sports.png";
 
-import codebyedgeImgCustomize1 from "../../assets/projects/codebyedge/customize-1.png";
-import codebyedgeImgCustomize2 from "../../assets/projects/codebyedge/customize-2.png";
-import codebyedgeImgCustomize3 from "../../assets/projects/codebyedge/customize-3.png";
-import codebyedgeImgCustomize4 from "../../assets/projects/codebyedge/customize-4.png";
-import codebyedgeImgMain from "../../assets/projects/codebyedge/main.png";
-import codebyedgeImgAbout from "../../assets/projects/codebyedge/about.png";
-import codebyedgeImgRingCollection from "../../assets/projects/codebyedge/ring-collection.png";
+import codebyedgeImgCustomize1 from "@/assets/projects/codebyedge/customize-1.png";
+import codebyedgeImgCustomize2 from "@/assets/projects/codebyedge/customize-2.png";
+import codebyedgeImgCustomize3 from "@/assets/projects/codebyedge/customize-3.png";
+import codebyedgeImgCustomize4 from "@/assets/projects/codebyedge/customize-4.png";
+import codebyedgeImgMain from "@/assets/projects/codebyedge/main.png";
+import codebyedgeImgAbout from "@/assets/projects/codebyedge/about.png";
+import codebyedgeImgRingCollection from "@/assets/projects/codebyedge/ring-collection.png";
 
-import aiDateAssistantImgThumbnail from "../../assets/projects/ai-date-assistant-rn/thumbnail.png";
-import aiDateAssistantImg1 from "../../assets/projects/ai-date-assistant-rn/1.png";
-import aiDateAssistantImg2 from "../../assets/projects/ai-date-assistant-rn/2.png";
-import aiDateAssistantImg3 from "../../assets/projects/ai-date-assistant-rn/3.png";
-import aiDateAssistantImg4 from "../../assets/projects/ai-date-assistant-rn/4.png";
-import aiDateAssistantImg5 from "../../assets/projects/ai-date-assistant-rn/5.png";
-import aiDateAssistantImg6 from "../../assets/projects/ai-date-assistant-rn/6.png";
-import aiDateAssistantImg7 from "../../assets/projects/ai-date-assistant-rn/7.png";
-import aiDateAssistantImg8 from "../../assets/projects/ai-date-assistant-rn/8.png";
+import aiDateAssistantImgThumbnail from "@/assets/projects/ai-date-assistant-rn/thumbnail.png";
+import aiDateAssistantImg1 from "@/assets/projects/ai-date-assistant-rn/1.png";
+import aiDateAssistantImg2 from "@/assets/projects/ai-date-assistant-rn/2.png";
+import aiDateAssistantImg3 from "@/assets/projects/ai-date-assistant-rn/3.png";
+import aiDateAssistantImg4 from "@/assets/projects/ai-date-assistant-rn/4.png";
+import aiDateAssistantImg5 from "@/assets/projects/ai-date-assistant-rn/5.png";
+import aiDateAssistantImg6 from "@/assets/projects/ai-date-assistant-rn/6.png";
+import aiDateAssistantImg7 from "@/assets/projects/ai-date-assistant-rn/7.png";
+import aiDateAssistantImg8 from "@/assets/projects/ai-date-assistant-rn/8.png";
 
-import aktaThumnailImg from "../../assets/projects/akta.pro/thmbnail.png";
-import aktaLandingImg from "../../assets/projects/akta.pro/landing.png";
+import aktaThumnailImg from "@/assets/projects/akta.pro/thmbnail.png";
+import aktaLandingImg from "@/assets/projects/akta.pro/landing.png";
 
-import rakuearnImg from "../../assets/projects/rakuearn/rakuearn.webp";
-import rakuearnImgHowItWorks from "../../assets/projects/rakuearn/how-it-work.png";
-import rakuearnImgPointExchange from "../../assets/projects/rakuearn/point-exchange.png";
+import rakuearnThumbnailImg from "@/assets/projects/rakuearn/thumbnail.png";
+import rakuearnSurveyListImg from "@/assets/projects/rakuearn/survey_list.png";
+import rakuearnAccountImg from "@/assets/projects/rakuearn/account.png";
+import rakuearnPointEarntImg from "@/assets/projects/rakuearn/point_earnt.png";
+import rakuearnPointExchangeHistoryImg from "@/assets/projects/rakuearn/point_exchange_history.png";
+import rakuearnImg from "@/assets/projects/rakuearn/rakuearn.webp";
+import rakuearnImgHowItWorks from "@/assets/projects/rakuearn/how-it-work.png";
+import rakuearnImgPointExchange from "@/assets/projects/rakuearn/point-exchange.png";
 
-import onewheelThumnailImg from "../../assets/projects/onewheel/thumbnail.png";
-import onewheel1Img from "../../assets/projects/onewheel/1.png";
-import onewheel2Img from "../../assets/projects/onewheel/2.png";
-import onewheel3Img from "../../assets/projects/onewheel/3.png";
-import onewheel4Img from "../../assets/projects/onewheel/4.png";
-import onewheel5Img from "../../assets/projects/onewheel/5.png";
-import onewheel6Img from "../../assets/projects/onewheel/6.png";
-import onewheel7Img from "../../assets/projects/onewheel/7.png";
+import onewheelThumnailImg from "@/assets/projects/onewheel/thumbnail.png";
+import onewheel1Img from "@/assets/projects/onewheel/1.png";
+import onewheel2Img from "@/assets/projects/onewheel/2.png";
+import onewheel3Img from "@/assets/projects/onewheel/3.png";
+import onewheel4Img from "@/assets/projects/onewheel/4.png";
+import onewheel5Img from "@/assets/projects/onewheel/5.png";
+import onewheel6Img from "@/assets/projects/onewheel/6.png";
+import onewheel7Img from "@/assets/projects/onewheel/7.png";
 
-import teamDryftImg from "../../assets/projects/teamdryft.png";
+import teamDryftThumbnailImg from "@/assets/projects/dryft/thumbnail.png";
+import teamDryftLandingImg from "@/assets/projects/dryft/landing.png";
 
 import medicareThumbImg from "@/assets/projects/medicare/thumb.png";
 import medicareHomeImg from "@/assets/projects/medicare/home.png";
@@ -69,6 +75,7 @@ import skyPostSettingsImg from "@/assets/projects/skypost/setting.png";
 import skyPostVideoImg from "@/assets/projects/skypost/video.png";
 
 export interface Project {
+  slug: string;
   title: string;
   description: string;
   image: string;
@@ -80,6 +87,9 @@ export interface Project {
   tags: string[];
 }
 
+export const getProjectBySlug = (slug: string) =>
+  projects.find((project) => project.slug === slug);
+
 export const hasProjectLink = (project: Project) =>
   Boolean(project.link?.trim());
 
@@ -88,6 +98,7 @@ export const getProjectGalleryImages = (project: Project) =>
 
 export const projects: Project[] = [
   {
+    slug: "nover-studio",
     title: "Nover Studio",
     description:
       "A professional AI visual generation suite built for designers, creators, artists, and creative teams who need precise control over AI-generated content. I designed and optimized the frontend experience across the marketing website and product onboarding flows, focusing on communicating Nover's unique 'design-first' approach to AI image creation. The platform enables users to generate, edit, remix, and control visual content through an intuitive interface with real-time scene manipulation, camera positioning, lighting controls, pose adjustments, depth management, object placement, text editing, and advanced AI workflow orchestration. I worked on conversion-focused landing pages, feature showcase sections, interactive product demonstrations, creator-focused messaging, pricing and onboarding experiences, workflow education, and trust-building content that highlights Nover's ability to replace prompt-heavy image generation with precise visual design controls. The platform combines multiple state-of-the-art AI models, node-based creative workflows, live editing capabilities, image generation, in-painting, out-painting, scene composition tools, and professional production features within a unified creative environment.",
@@ -121,6 +132,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "skypost",
     title: "SkyPost | Marketing Automation Platform",
     description:
       "A full-stack AI-powered marketing automation platform designed to streamline the entire social media content lifecycle, from AI-assisted creation to automated multi-platform publishing. I designed and implemented the system architecture, including database schema design, backend APIs, scheduling workflows, queue processing, authentication, and frontend user experience. The platform enables users to generate AI-powered text, images, and videos, review and edit content before publishing, schedule campaigns across flexible calendars and time zones, and automatically publish content to connected social media accounts such as Twitter and Bluesky. I architected scalable PostgreSQL database schemas, background job processing, automated publishing pipelines, AI content generation services, media management, social account integrations, analytics dashboards, and retry mechanisms for failed publishing jobs. The system combines Claude-powered content generation, AI media workflows, asynchronous scheduling, campaign management, approval flows, content libraries, and real-time dashboard analytics into a unified SaaS platform that significantly reduces manual marketing operations while providing a scalable foundation for future multi-platform expansion.",
@@ -154,6 +166,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "amoreai",
     title: "AmoreAI",
     description:
       "Amore AI is an AI-powered dating coach that helps users improve their dating profiles, choose stronger photos, rewrite bios, and generate better conversation starters. The platform uses personalized AI analysis to review profile quality, rank dating photos, suggest engaging openers, and coach users through chat replies. Built for users across Tinder, Bumble, Hinge, and other dating apps, it focuses on improving match rates, reducing messaging anxiety, and creating more confident online dating experiences.",
@@ -164,6 +177,7 @@ export const projects: Project[] = [
     appStoreLink:
       "https://apps.apple.com/in/app/amoreai-ai-dating-coach/id6761085824",
     images: [
+      aiDateAssistantImgThumbnail,
       aiDateAssistantImg1,
       aiDateAssistantImg2,
       aiDateAssistantImg3,
@@ -188,6 +202,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "medicare-ai",
     title: "MediCare AI",
     description:
       "MediCare AI is a modern AI-powered healthcare platform that helps users access healthcare information, discover relevant medical services, and receive intelligent guidance through conversational AI. The platform leverages advanced LLM technology to provide personalized healthcare assistance, answer medical-related questions, streamline patient interactions, and improve access to healthcare resources. Built with a scalable cloud-native architecture, MediCare AI delivers a seamless user experience through AI-driven conversations, secure data management, and responsive web interfaces.",
@@ -212,12 +227,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "rakuearn",
     title: "RakuEarn",
     description:
       "Raku Earn is an AI-powered rewards platform that helps users earn points by automatically completing surveys through a browser-based automation assistant. The platform combines a point-earning website, Chrome extension, AI dashboard, and reward redemption system where users can exchange points for bank transfers, PayPay, and gift cards. Its core experience focuses on profile-based AI form completion, real-time point tracking, and a simple rewards workflow designed to reduce manual survey effort.",
-    image: rakuearnImg,
+    image: rakuearnThumbnailImg,
     link: "https://rakuearn.com/en",
-    images: [rakuearnImg, rakuearnImgHowItWorks, rakuearnImgPointExchange],
+    images: [
+      rakuearnThumbnailImg,
+      rakuearnImg,
+      rakuearnImgHowItWorks,
+      rakuearnImgPointExchange,
+      rakuearnSurveyListImg,
+      rakuearnAccountImg,
+      rakuearnPointEarntImg,
+      rakuearnPointExchangeHistoryImg,
+    ],
     tags: [
       "Next.js",
       "Supabase",
@@ -234,6 +259,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "xmr-play",
     title: "XMR Play | Real-Time iGaming Platform",
     description:
       "A high-concurrency real-time iGaming platform for web and mobile users, supporting live gameplay, betting systems, wallet operations, and real-time user engagement. Built with React, Next.js, TypeScript, and WebSocket-based infrastructure, the platform delivers low-latency gameplay synchronization, live chat, transaction tracking, AI-assisted moderation, and scalable user experiences for thousands of concurrent players.",
@@ -263,8 +289,8 @@ export const projects: Project[] = [
       "AWS",
     ],
   },
-
   {
+    slug: "onewheel",
     title: "Onewheel",
     description:
       "A large-scale connected mobility ecosystem supporting smart electric vehicles, mobile applications, rider communities, GPS route tracking, real-time board telemetry, firmware management, and personalized ride experiences. The platform integrates Bluetooth-connected hardware, cloud-based analytics, live ride monitoring, digital ride customization, social engagement systems, and performance tracking infrastructure. Designed to support thousands of active riders globally, the system delivers seamless communication between hardware devices, mobile applications, and cloud services while maintaining responsive user experiences and reliable telemetry synchronization.",
@@ -296,6 +322,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "code-by-edge",
     title: "Code by Edge | Luxury Jewelry E-Commerce & Morse Code Customizer",
     description:
       "A luxury jewelry e-commerce platform and Morse code customization studio built for a UK-based bespoke jewelry brand. As a Senior Frontend Engineer, I developed interactive product customization experiences using React and Three.js, enabling users to personalize rings and jewelry with encoded Morse code messages, gemstone selections, metal options, and real-time visual previews. The platform also included a polished e-commerce experience with product browsing, dynamic configuration flows, checkout integration, and secure payment processing to support high-value personalized jewelry purchases.",
@@ -325,8 +352,8 @@ export const projects: Project[] = [
       "Shopify",
     ],
   },
-
   {
+    slug: "personal-portfolio",
     title: "Personal Portfolio",
     description:
       "A modern, performance‑focused portfolio built with React 19, Tailwind CSS v4, and the Motion API. Designed with accessibility, smooth scroll‑based animations, and subtle micro‑interactions to feel fast and polished on every device.",
@@ -345,14 +372,14 @@ export const projects: Project[] = [
       "React Icons",
     ],
   },
-
   {
+    slug: "dryft",
     title: "Dryft | Automotive Parts Discovery Platform",
     description:
       "Dryft is a fitment-first automotive parts discovery platform that helps drivers and car enthusiasts find compatible aftermarket parts for their exact vehicle. Users can search by make, model, year, and trim, compare trusted brands and vendors, review compatibility, and discover parts across key automotive categories in one streamlined interface.",
-    image: teamDryftImg,
+    image: teamDryftThumbnailImg,
     link: "https://www.teamdryft.com/",
-    images: [teamDryftImg],
+    images: [teamDryftThumbnailImg, teamDryftLandingImg],
     tags: [
       "Framer",
       "Tailwind CSS",
@@ -364,6 +391,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "akta",
     title: "Akta | AI-Native News Intelligence API",
     description:
       "A developer-focused news intelligence platform that provides structured company news data for AI agents, data teams, and enterprise workflows. I built and optimized the frontend experience for the public marketing site and product-facing API entry points, focusing on clear positioning, conversion-driven CTAs, responsive layouts, pricing presentation, feature education, and developer onboarding. The platform highlights private entity resolution across 20M+ parent companies, subsidiaries, trading names, and namesakes, custom endpoint configuration, contextual intelligence, materiality scoring, sentiment analysis, geographic tagging, topic classification, and source scoring. I also worked on UI sections for API sample responses, use-case segmentation, pricing tiers, enterprise trust messaging, and playground/documentation navigation to help technical users quickly understand the value of the API and start testing it.",

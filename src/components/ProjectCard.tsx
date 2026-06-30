@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ExternalLink, Github, Images } from 'lucide-react';
 import { BiLogoPlayStore } from 'react-icons/bi';
@@ -23,8 +24,11 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const showExternalLink = hasProjectLink(project);
   const galleryImages = getProjectGalleryImages(project);
+  const detailPath = `/projects/${project.slug}`;
 
-  const openGallery = () => {
+  const openGallery = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
     setActiveImageIndex(0);
     setIsGalleryOpen(true);
   };
@@ -38,18 +42,10 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         transition={{ delay: index * 0.1 }}
         className="group relative flex flex-col bg-slate-50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800/60 rounded-2xl hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:z-20 transition-all duration-500 ease-out h-full"
       >
-        <div
-          className="relative w-full aspect-[4/3] overflow-hidden bg-slate-200 dark:bg-slate-800 shrink-0 rounded-t-2xl cursor-pointer"
-          onClick={openGallery}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-              e.preventDefault();
-              openGallery();
-            }
-          }}
-          role="button"
-          tabIndex={0}
-          aria-label={`View ${project.title} images`}
+        <Link
+          to={detailPath}
+          className="relative w-full aspect-[4/3] overflow-hidden bg-slate-200 dark:bg-slate-800 shrink-0 rounded-t-2xl block"
+          aria-label={`View ${project.title} details`}
         >
           <div className="absolute inset-0 opacity-40 dark:opacity-20 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] dark:bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:16px_16px]"></div>
           <img
@@ -62,10 +58,10 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-slate-900/60 sm:from-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <span className="px-3 py-1.5 rounded-full text-[10px] font-mono uppercase tracking-wider bg-white/90 dark:bg-slate-900/90 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
-              View Images
+              View Project
             </span>
           </div>
-        </div>
+        </Link>
 
         <div className="flex flex-col grow p-4 sm:p-5 space-y-2 justify-start rounded-b-2xl">
           <div className="flex flex-col gap-2 min-w-0">
@@ -127,23 +123,22 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
                 </a>
               )}
             </div>
-            <MarqueeTitle text={project.title} />
+            <Link to={detailPath} className="block min-w-0 hover:opacity-80 transition-opacity">
+              <MarqueeTitle text={project.title} />
+            </Link>
           </div>
 
-          <div className="relative group/desc">
-            <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 leading-relaxed cursor-default">
+          <Link
+            to={detailPath}
+            className="relative group/desc block min-w-0 hover:opacity-80 transition-opacity"
+          >
+            <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 leading-relaxed">
               {project.description}
             </p>
-            <div
-              role="tooltip"
-              className="absolute left-0 right-0 top-full z-30 mt-2 px-3 py-2.5 rounded-xl border border-slate-300/80 dark:border-slate-600 bg-slate-900/95 dark:bg-slate-800/95 text-xs text-slate-50 dark:text-slate-100 leading-relaxed shadow-xl opacity-0 invisible group-hover/desc:opacity-100 group-hover/desc:visible transition-all duration-200 pointer-events-none"
-            >
-              {project.description}
-            </div>
-          </div>
+          </Link>
 
-          <div className="pt-1.5 flex flex-wrap gap-1.5">
-            {project.tags.map((tag, i) => {
+          <Link to={detailPath} className="pt-1.5 flex flex-wrap gap-1.5 hover:opacity-80 transition-opacity">
+            {project.tags.slice(0, 4).map((tag, i) => {
               const Icon = getSkillIcon(tag);
               return (
                 <span
@@ -155,7 +150,12 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
                 </span>
               );
             })}
-          </div>
+            {project.tags.length > 4 && (
+              <span className="flex items-center px-2 py-0.5 text-[9px] uppercase tracking-wider font-mono rounded-md bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500">
+                +{project.tags.length - 4} more
+              </span>
+            )}
+          </Link>
         </div>
       </motion.div>
 
