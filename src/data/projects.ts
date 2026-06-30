@@ -60,6 +60,14 @@ import nover5Img from "@/assets/projects/nover/nover_5.png";
 import nover6Img from "@/assets/projects/nover/nover_6.png";
 import nover7Img from "@/assets/projects/nover/nover_7.png";
 
+import skyPostThumbnailImg from "@/assets/projects/skypost/thumbnail.png";
+import skyPostLandingImg from "@/assets/projects/skypost/landing.png";
+import skyPostDashboardImg from "@/assets/projects/skypost/dashboard.png";
+import skyPostGenerateImg from "@/assets/projects/skypost/generate.png";
+import skyPostPublishedImg from "@/assets/projects/skypost/published.png";
+import skyPostSettingsImg from "@/assets/projects/skypost/setting.png";
+import skyPostVideoImg from "@/assets/projects/skypost/video.png";
+
 export interface Project {
   title: string;
   description: string;
@@ -98,7 +106,7 @@ export const projects: Project[] = [
     ],
     tags: [
       "Next.js",
-      "Supabase", 
+      "Supabase",
       "PostgreSQL",
       "TypeScript",
       "Tailwind CSS",
@@ -113,25 +121,36 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "RakuEarn",
+    title: "SkyPost | Marketing Automation Platform",
     description:
-      "Raku Earn is an AI-powered rewards platform that helps users earn points by automatically completing surveys through a browser-based automation assistant. The platform combines a point-earning website, Chrome extension, AI dashboard, and reward redemption system where users can exchange points for bank transfers, PayPay, and gift cards. Its core experience focuses on profile-based AI form completion, real-time point tracking, and a simple rewards workflow designed to reduce manual survey effort.",
-    image: rakuearnImg,
-    link: "https://rakuearn.com/en",
-    images: [rakuearnImg, rakuearnImgHowItWorks, rakuearnImgPointExchange],
+      "A full-stack AI-powered marketing automation platform designed to streamline the entire social media content lifecycle, from AI-assisted creation to automated multi-platform publishing. I designed and implemented the system architecture, including database schema design, backend APIs, scheduling workflows, queue processing, authentication, and frontend user experience. The platform enables users to generate AI-powered text, images, and videos, review and edit content before publishing, schedule campaigns across flexible calendars and time zones, and automatically publish content to connected social media accounts such as Twitter and Bluesky. I architected scalable PostgreSQL database schemas, background job processing, automated publishing pipelines, AI content generation services, media management, social account integrations, analytics dashboards, and retry mechanisms for failed publishing jobs. The system combines Claude-powered content generation, AI media workflows, asynchronous scheduling, campaign management, approval flows, content libraries, and real-time dashboard analytics into a unified SaaS platform that significantly reduces manual marketing operations while providing a scalable foundation for future multi-platform expansion.",
+    image: skyPostThumbnailImg,
+    link: "https://skypost-ai.vercel.app",
+    images: [
+      skyPostLandingImg,
+      skyPostDashboardImg,
+      skyPostGenerateImg,
+      skyPostPublishedImg,
+      skyPostSettingsImg,
+      skyPostVideoImg,
+    ],
     tags: [
       "Next.js",
+      "React",
+      "TypeScript",
       "Supabase",
       "PostgreSQL",
-      "TypeScript",
-      "React.js",
-      "OpenAI API",
-      "AI",
-      "LLM",
-      "Automation",
-      "UI/UX",
-      "Pixel Perfect Design",
-      "Payment Processing",
+      "Tailwind CSS",
+      "AI Content Generation",
+      "Claude",
+      "OpenAI",
+      "Social Media Automation",
+      "Video Publishing",
+      "Content Scheduling",
+      "Twitter API",
+      "Bluesky API",
+      "Marketing Automation",
+      "SaaS Platform",
     ],
   },
   {
@@ -190,6 +209,28 @@ export const projects: Project[] = [
       "UI/UX",
       "Automation",
       "Web Application",
+    ],
+  },
+  {
+    title: "RakuEarn",
+    description:
+      "Raku Earn is an AI-powered rewards platform that helps users earn points by automatically completing surveys through a browser-based automation assistant. The platform combines a point-earning website, Chrome extension, AI dashboard, and reward redemption system where users can exchange points for bank transfers, PayPay, and gift cards. Its core experience focuses on profile-based AI form completion, real-time point tracking, and a simple rewards workflow designed to reduce manual survey effort.",
+    image: rakuearnImg,
+    link: "https://rakuearn.com/en",
+    images: [rakuearnImg, rakuearnImgHowItWorks, rakuearnImgPointExchange],
+    tags: [
+      "Next.js",
+      "Supabase",
+      "PostgreSQL",
+      "TypeScript",
+      "React.js",
+      "OpenAI API",
+      "AI",
+      "LLM",
+      "Automation",
+      "UI/UX",
+      "Pixel Perfect Design",
+      "Payment Processing",
     ],
   },
   {
