@@ -65,8 +65,8 @@ export default function Contact() {
             className="text-2xl font-medium leading-tight tracking-tight text-slate-900 transition-colors duration-300 dark:text-white md:text-4xl"
           >
             Let’s Build{" "}
-            <span className="bg-gradient-to-r from-blue-500 via-violet-500 to-blue-600 bg-clip-text font-bold text-transparent">
-              AI-Native
+            <span className="bg-linear-to-r from-blue-500 via-violet-500 to-blue-600 bg-clip-text font-bold text-transparent">
+              Scalable
             </span>{" "}
             Products Together
           </motion.h2>
@@ -78,9 +78,9 @@ export default function Contact() {
             transition={{ delay: 0.08 }}
             className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-slate-600 transition-colors duration-300 dark:text-slate-400 sm:text-base"
           >
-            I help startups and teams build scalable frontend systems,
-            conversational AI interfaces, real-time applications, and modern
-            SaaS platforms.
+            I help startups and teams design, build, and scale AI-powered
+            products, modern SaaS platforms, backend systems, and cloud-native
+            applications.
           </motion.p>
 
           {/* Buttons */}
@@ -101,7 +101,6 @@ export default function Contact() {
             >
               <BsChat className="h-5 w-5 text-violet-400 dark:text-violet-500" />
               Work With Me
-
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
 
