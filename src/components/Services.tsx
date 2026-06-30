@@ -1,45 +1,39 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import {
-  Code2,
-  BrainCircuit,
-  LayoutTemplate,
-  ArrowRight,
-  Sparkles,
-} from "lucide-react";
+import { Code2, Database, Network, Sparkles } from "lucide-react";
 
 const servicesData = [
   {
-    title: "AI Integration & Automation",
+    title: "AI Product Engineering",
     description:
-      "Integrating LLMs, conversational AI, intelligent workflows, and automation systems into scalable digital products.",
+      "Designing and building AI-native products with LLM integrations, intelligent workflows, copilots, and automation that ship as polished, production-ready experiences.",
     icon: Sparkles,
     number: "01",
     color: "text-rose-500",
     glow: "from-rose-500/20 to-orange-500/10",
   },
   {
-    title: "AI-Powered Frontend Development",
+    title: "System Architecture & Infrastructure",
     description:
-      "Building modern AI-native user experiences including streaming chat interfaces, copilots, and conversational workflows.",
-    icon: BrainCircuit,
+      "Architecting scalable systems with cloud infrastructure, service design, deployment pipelines, and resilient foundations built for growth and high availability.",
+    icon: Network,
     number: "02",
     color: "text-emerald-500",
     glow: "from-emerald-500/20 to-cyan-500/10",
   },
   {
-    title: "Real-Time Web Applications",
+    title: "Database & Backend Engineering",
     description:
-      "Developing high-performance real-time systems with live updates, streaming data, analytics, and interactive experiences.",
-    icon: LayoutTemplate,
+      "Engineering robust backend services, APIs, data models, and database systems with PostgreSQL, Supabase, and modern server-side patterns for reliable data flow.",
+    icon: Database,
     number: "03",
     color: "text-violet-500",
     glow: "from-violet-500/20 to-fuchsia-500/10",
   },
   {
-    title: "Full Stack Architecture",
+    title: "Full Stack SaaS Development",
     description:
-      "Designing scalable application architectures with modern frontend frameworks, backend services, APIs, databases, and cloud infrastructure.",
+      "Delivering end-to-end SaaS platforms with modern frontend frameworks, authentication, billing, dashboards, and product experiences that convert and scale.",
     icon: Code2,
     number: "04",
     color: "text-blue-500",
